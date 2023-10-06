@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="nav">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="">Home</a></li>
+          <li class="nav__item"><a href="#band">Band</a></li>
+          <li class="nav__item"><a href="">Tour</a></li>
+          <li class="nav__item"><a href="">Contact</a></li>
+          <li class="nav__item">
+            <a href="">
+              More
+              <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <ul class="sub-menu">
+              <li class="sub-menu__item">Merchandise</li>
+              <li class="sub-menu__item">Extras</li>
+              <li class="sub-menu__item">Media</li>
+            </ul>
+          </li>
+        </ul>
+        <a href="" class="search-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="ionicon"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
+              fill="none"
+              stroke="currentColor"
+              stroke-miterlimit="10"
+              stroke-width="32"
+            />
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              stroke-width="32"
+              d="M338.29 338.29L448 448"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="banner">
+        <div class="slide-show-item">
+          <img
+            src="./assets/img/la.jpg
+          "
+            alt=""
+          />
+          <div class="slide-show-text">
+            <h3>Los Angeles</h3>
+
+            <p>We had the best time playing at Venice Beach!</p>
+          </div>
+        </div>
+        <div class="slide-show-item">
+          <img src="./assets/img/ny.jpg" alt="" />
+          <div class="slide-show-text">
+            <h3>New York</h3>
+            <p>The atmosphere in New York is lorem ipsum.</p>
+          </div>
+        </div>
+        <div class="slide-show-item">
+          <img src="./assets/img/chicago.jpg" alt="" />
+          <div class="slide-show-text">
+            <h3>Chicago</h3>
+            <p>Thank you, Chicago - A night we won't forget.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container content center" style="max-width: 800px" id="band">
+      <h2 class="wide">THE BAND</h2>
+      <p class="opacity"><i>We love music</i></p>
+      <p class="justify">
+        We have created a fictional band website. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <div class="row padding-32">
+        <div class="zilong">
+          <p>Name</p>
+          <img
+            src="assets/img/bandmember.jpg"
+            class="round margin-bottom"
+            alt="Random Name"
+            style="width: 60%"
+          />
+        </div>
+        <div class="zilong">
+          <p>Name</p>
+          <img
+            src="assets/img/bandmember.jpg"
+            class="round margin-bottom"
+            alt="Random Name"
+            style="width: 60%"
+          />
+        </div>
+        <div class="zilong">
+          <p>Name</p>
+          <img
+            src="assets/img/bandmember.jpg"
+            class="round"
+            alt="Random Name"
+            style="width: 60%"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="tour" id="tour">
+      <div style="max-width: 800px; margin: 0 auto">
+        <h2 class="Title">TOUR DATES</h2>
+        <p class="Title-s2">
+          <i>Remember to book your tickets!</i>
+        </p>
+        <br />
+
+        <ul class="months">
+          <li class="months__item">
+            September <span class="tag">Sold out</span>
+          </li>
+          <li class="months__item">
+            October <span class="tag">Sold out</span>
+          </li>
+          <li class="months__item">November <span class="number">3</span></li>
+        </ul>
+
+        <div class="event-container" style="margin: 0 -8px">
+          <div class="event-item">
+            <img
+              src="./assets/img/newyork.jpg"
+              alt="New York"
+              style="width: 100%"
+              class="image-hover-opacity"
+            />
+            <div class="event-details">
+              <p><b>New York</b></p>
+              <p class="event-date opacity">Fri 27 Nov 2016</p>
+              <p>
+                Description: Praesent tincidunt sed tellus ut rutrum sed vitae
+                justo.
+              </p>
+              <button
+                class="buy-ticket-button black white margin-bottom"
+                onclick="document.getElementById('ticketModal').style.display='block'"
+              >
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+          <div class="event-item">
+            <img
+              src="./assets/img/paris.jpg"
+              alt="Paris"
+              style="width: 100%"
+              class="image-hover-opacity"
+            />
+            <div class="event-details">
+              <p><b>Paris</b></p>
+              <p class="event-date opacity">Sat 28 Nov 2016</p>
+              <p>
+                Description: Praesent tincidunt sed tellus ut rutrum sed vitae
+                justo.
+              </p>
+              <button
+                class="buy-ticket-button black white margin-bottom"
+                onclick="document.getElementById('ticketModal').style.display='block'"
+              >
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+          <div class="event-item">
+            <img
+              src="./assets/img/sanfran.jpg"
+              alt="San Francisco"
+              style="width: 100%"
+              class="image-hover-opacity"
+            />
+            <div class="event-details">
+              <p><b>San Francisco</b></p>
+              <p class="event-date opacity">Sun 29 Nov 2016</p>
+              <p>
+                Description: Praesent tincidunt sed tellus ut rutrum sed vitae
+                justo.
+              </p>
+              <button
+                class="buy-ticket-button black white margin-bottom"
+                onclick="document.getElementById('ticketModal').style.display='block'"
+              >
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container content padding-64"
+      style="max-width: 800px; margin: 0 auto"
+      id="contact"
+    >
+      <h2 class="Title">CONTACT</h2>
+      <p class="Title-s2"><i>Fan? Drop a note!</i></p>
+      <div class="contact">
+        <div class="contact__description">
+          <i class="fa fa-map-marker" style="width: 30px"></i> Chicago, US<br />
+          <i class="fa fa-phone" style="width: 30px"></i> Phone: +00 151515<br />
+          <i class="fa fa-envelope" style="width: 30px"> </i> Email:
+          mail@mail.com<br />
+        </div>
+        <div class="content__input">
+          <form action="" target="_blank">
+            <div class="content__input__box">
+              <div class="content__input__box__top top__left">
+                <input
+                  class="input__Name"
+                  type="text"
+                  placeholder="Name"
+                  required=""
+                  name="Name"
+                />
+              </div>
+              <div class="content__input__box__top top__right">
+                <input
+                  class="input__Email"
+                  type="text"
+                  placeholder="Email"
+                  required=""
+                  name="Email"
+                />
+              </div>
+            </div>
+            <input
+              class="input__Message"
+              type="text"
+              placeholder="Message"
+              required=""
+              name="Message"
+            />
+            <button class="" type="submit">SEND</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="" style="max-width: 2000px; margin-top: 46px">
+      <div class="" style="display: block">
+        <img src="./assets/img/map.jpg" style="width: 100%" />
+      </div>
+      <footer class="zcontainer -64 zcenter zopacity zlight-grey zxlarge">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z"
+            fill-rule="evenodd"
+          />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"
+          />
+          <path
+            d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"
+          />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M496 347.21a190.31 190.31 0 01-32.79-5.31c-27.28-6.63-54.84-24.26-68.12-52.43-6.9-14.63-2.64-18.59 11.86-24 14.18-5.27 29.8-7.72 36.86-23 5.89-12.76 1.13-27.76-10.41-35.49-15.71-10.53-30.35-.21-46.62 2.07 3.73-46.66 8.66-88.57-22.67-127.73C338.14 48.86 297.34 32 256.29 32s-81.86 16.86-107.81 49.33c-31.38 39.26-26.4 81.18-22.67 127.92-16.32-2.25-30.81-12.79-46.63-2.18-14.72 9.85-17 29.76-5.44 43s31.64 9.5 43.45 20.6c6.49 6.09 3.49 12.61-.35 20.14-14.48 28.4-39.26 45.74-69.84 51.56-4 .76-22.31 2.87-31 3.65 0 9.28.52 16.78 1.63 21.73 2.94 13.06 12.32 23.58 23.69 30.1 11.18 6.4 35.48 6.43 41.68 15.51 3 4.48 1.76 12.28 5.33 17.38a23.8 23.8 0 0015.37 9.75c18.61 3.61 37.32-7.2 56.42-2.1 14.85 3.95 26.52 15.87 39.26 24 15.51 9.85 32.34 16.42 50.83 17.49 38.1 2.21 59.93-18.91 90.58-36.42 19.5-11.14 38.15-3.86 58.88-2.68 20.1 1.15 23.53-9.25 29.62-24.88a27.37 27.37 0 001.54-4.85 10.52 10.52 0 002.28-1.47c2-1.57 10.55-2.34 12.76-2.86 10.28-2.44 20.34-5.15 29.17-11.2 11.31-7.76 17.65-18.5 19.58-32.64a93.73 93.73 0 001.38-15.67zM208 128c8.84 0 16 10.74 16 24s-7.16 24-16 24-16-10.74-16-24 7.16-24 16-24zm103.62 77.7c-15.25 15-35 23.3-55.62 23.3a78.37 78.37 0 01-55.66-23.34 8 8 0 0111.32-11.32A62.46 62.46 0 00256 213c16.39 0 32.15-6.64 44.39-18.7a8 8 0 0111.23 11.4zM304 176c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24z"
+          />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M256.05 32c-123.7 0-224 100.3-224 224 0 91.7 55.2 170.5 134.1 205.2-.6-15.6-.1-34.4 3.9-51.4 4.3-18.2 28.8-122.1 28.8-122.1s-7.2-14.3-7.2-35.4c0-33.2 19.2-58 43.2-58 20.4 0 30.2 15.3 30.2 33.6 0 20.5-13.1 51.1-19.8 79.5-5.6 23.8 11.9 43.1 35.4 43.1 42.4 0 71-54.5 71-119.1 0-49.1-33.1-85.8-93.2-85.8-67.9 0-110.3 50.7-110.3 107.3 0 19.5 5.8 33.3 14.8 43.9 4.1 4.9 4.7 6.9 3.2 12.5-1.1 4.1-3.5 14-4.6 18-1.5 5.7-6.1 7.7-11.2 5.6-31.3-12.8-45.9-47-45.9-85.6 0-63.6 53.7-139.9 160.1-139.9 85.5 0 141.8 61.9 141.8 128.3 0 87.9-48.9 153.5-120.9 153.5-24.2 0-46.9-13.1-54.7-27.9 0 0-13 51.6-15.8 61.6-4.7 17.3-14 34.5-22.5 48a225.13 225.13 0 0063.5 9.2c123.7 0 224-100.3 224-224S379.75 32 256.05 32z"
+          />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z"
+          />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"
+          />
+          <path
+            d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"
+          />
+        </svg>
+        <p class="zmedium">
+          Powered by
+          <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+            >w3.css</a
+          >
+        </p>
+      </footer>
+      <div id="ticketModal" class="modal">
+        <div class="modal__content animate-top card-4" style="position: relative;">
+          <div class="container teal center" >
+            <span
+              onclick="document.getElementById('ticketModal').style.display='none'" style="position: absolute;"
+              class="button teal display-topright"
+              >×</span
+            >
+            <h2 class="wide">
+              <i class="fa fa-suitcase margin-right"></i>Tickets
+            </h2>
+          </div>
+          <div class="container">
+            <p>
+              <label
+                ><i class="fa fa-shopping-cart"></i> Tickets, $15 per
+                person</label
+              >
+            </p>
+            <input class="input border" type="text" placeholder="How many?" />
+            <p>
+              <label><i class="fa fa-user"></i> Send To</label>
+            </p>
+            <input class="input border" type="text" placeholder="Enter email" />
+            <button class="button block teal  section right">
+              PAY <i class="fa fa-check"></i>
+            </button>
+            <div></div>
+            <button
+              class="button red section"
+              onclick="document.getElementById('ticketModal').style.display='none'"
+            >
+              Close <i class="fa fa-remove"></i>
+            </button>
+            <p class="right">Need <a href="#" class="text-blue">help?</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/js/main.js"></script>
+</html>
