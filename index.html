@@ -3,300 +3,134 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CV INTER FRONT-END</title>
   </head>
   <body>
-    <div class="header">
-      <div class="nav">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="">Home</a></li>
-          <li class="nav__item"><a href="#band">Band</a></li>
-          <li class="nav__item"><a href="#tour">Tour</a></li>
-          <li class="nav__item"><a href="#contact">Contact</a></li>
-          <li class="nav__item">
-            <a href="">
-              More
-              <i class="fa fa-caret-down"></i>
-            </a>
-            <ul class="sub-menu">
-              <li class="sub-menu__item">Merchandise</li>
-              <li class="sub-menu__item">Extras</li>
-              <li class="sub-menu__item">Media</li>
-            </ul>
-          </li>
-        </ul>
-        <a href="#" class="search-button">
-          <i class="fa fa-search"></i>
-        </a>
-      </div>
-      <div class="banner">
-        <div class="slide-show-item">
-          <img
-            src="./assets/img/la.jpg
-          "
-            alt=""
-          />
-          <div class="slide-show-text">
-            <h3>Los Angeles</h3>
-
-            <p>We had the best time playing at Venice Beach!</p>
-          </div>
+    <div class="body">
+      <!-- thông tin cá nhân  -->
+      <div class="head">
+        <div class="head_left">
+          <div class="head_left_name">PHẠM ANH TUẤN</div>
+          <div class="head_left_des">FRONT-END DEVELOPER</div>
         </div>
-        <div class="slide-show-item">
-          <img src="./assets/img/ny.jpg" alt="" />
-          <div class="slide-show-text">
-            <h3>New York</h3>
-            <p>The atmosphere in New York is lorem ipsum.</p>
-          </div>
-        </div>
-        <div class="slide-show-item">
-          <img src="./assets/img/chicago.jpg" alt="" />
-          <div class="slide-show-text">
-            <h3>Chicago</h3>
-            <p>Thank you, Chicago - A night we won't forget.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container content center" style="max-width: 800px" id="band">
-      <h2 class="wide">THE BAND</h2>
-      <p class="opacity"><i>We love music</i></p>
-      <p class="justify">
-        We have created a fictional band website. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-      <div class="row padding-32">
-        <div class="zilong">
-          <p>Name</p>
-          <img
-            src="assets/img/bandmember.jpg"
-            class="round margin-bottom"
-            alt="Random Name"
-            style="width: 60%"
-          />
-        </div>
-        <div class="zilong">
-          <p>Name</p>
-          <img
-            src="assets/img/bandmember.jpg"
-            class="round margin-bottom"
-            alt="Random Name"
-            style="width: 60%"
-          />
-        </div>
-        <div class="zilong">
-          <p>Name</p>
-          <img
-            src="assets/img/bandmember.jpg"
-            class="round"
-            alt="Random Name"
-            style="width: 60%"
-          />
-        </div>
-      </div>
-    </div>
-    <div class="tour" id="tour">
-      <div style="max-width: 800px; margin: 0 auto">
-        <h2 class="Title">TOUR DATES</h2>
-        <p class="Title-s2">
-          <i>Remember to book your tickets!</i>
-        </p>
-        <br />
-
-        <ul class="months">
-          <li class="months__item">
-            September <span class="tag">Sold out</span>
-          </li>
-          <li class="months__item">
-            October <span class="tag">Sold out</span>
-          </li>
-          <li class="months__item">November <span class="number">3</span></li>
-        </ul>
-
-        <div class="event-container" style="margin: 0 -8px">
-          <div class="event-item">
-            <img
-              src="./assets/img/newyork.jpg"
-              alt="New York"
-              style="width: 100%"
-              class="image-hover-opacity"
-            />
-            <div class="event-details">
-              <p><b>New York</b></p>
-              <p class="event-date opacity">Fri 27 Nov 2016</p>
-              <p>
-                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
-              </p>
-              <button
-                class="buy-ticket-button black white margin-bottom"
-                onclick="document.getElementById('ticketModal').style.display='block'"
-              >
-                Buy Tickets
-              </button>
-            </div>
-          </div>
-          <div class="event-item">
-            <img
-              src="./assets/img/paris.jpg"
-              alt="Paris"
-              style="width: 100%"
-              class="image-hover-opacity"
-            />
-            <div class="event-details">
-              <p><b>Paris</b></p>
-              <p class="event-date opacity">Sat 28 Nov 2016</p>
-              <p>
-                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
-              </p>
-              <button
-                class="buy-ticket-button black white margin-bottom"
-                onclick="document.getElementById('ticketModal').style.display='block'"
-              >
-                Buy Tickets
-              </button>
-            </div>
-          </div>
-          <div class="event-item">
-            <img
-              src="./assets/img/sanfran.jpg"
-              alt="San Francisco"
-              style="width: 100%"
-              class="image-hover-opacity"
-            />
-            <div class="event-details">
-              <p><b>San Francisco</b></p>
-              <p class="event-date opacity">Sun 29 Nov 2016</p>
-              <p>
-                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
-              </p>
-              <button
-                class="buy-ticket-button black white margin-bottom"
-                onclick="document.getElementById('ticketModal').style.display='block'"
-              >
-                Buy Tickets
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="container content padding-64"
-      style="max-width: 800px; margin: 0 auto"
-      id="contact"
-    >
-      <h2 class="Title">CONTACT</h2>
-      <p class="Title-s2"><i>Fan? Drop a note!</i></p>
-      <div class="contact">
-        <div class="contact__description">
-          <i class="fa fa-map-marker" style="width: 30px"></i> Chicago, US<br />
-          <i class="fa fa-phone" style="width: 30px"></i> Phone: +00 151515<br />
-          <i class="fa fa-envelope" style="width: 30px"> </i> Email:
-          mail@mail.com<br />
-        </div>
-        <div class="content__input">
-          <form action="" target="_blank">
-            <div class="content__input__box">
-              <div class="content__input__box__top top__left">
-                <input
-                  class="input__Name"
-                  type="text"
-                  placeholder="Name"
-                  required=""
-                  name="Name"
-                />
-              </div>
-              <div class="content__input__box__top top__right">
-                <input
-                  class="input__Email"
-                  type="text"
-                  placeholder="Email"
-                  required=""
-                  name="Email"
-                />
-              </div>
-            </div>
-            <input
-              class="input__Message"
-              type="text"
-              placeholder="Message"
-              required=""
-              name="Message"
-            />
-            <button class="" type="submit">SEND</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="" style="max-width: 2000px; margin-top: 46px">
-      <div class="" style="display: block">
-        <img src="./assets/img/map.jpg" style="width: 100%" />
-      </div>
-      <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-        <p class="medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-      </footer>
-      <div id="ticketModal" class="modal">
-        <div class="modal__content animate-top card-4" style="position: relative;">
-          <div class="container teal center" >
-            <span
-              onclick="document.getElementById('ticketModal').style.display='none'" style="position: absolute;"
-              class="button teal display-topright"
-              >×</span
+        <div class="head_right">
+          <div class="head_right_info">
+            <div class="head_right_info_address">Bắc Từ Liêm, Hà Nội</div>
+            <a
+              href="mailto:phamtuan72az@gmail.com"
+              class="head_right_info_email"
+              >phamtuan72az@gmail.com</a
             >
-            <h2 class="wide">
-              <i class="fa fa-suitcase margin-right"></i>Tickets
-            </h2>
+            <div class="head_right_info_phone">+200000000000</div>
+            <div class="head_right_info_linkedin">
+              https://www.linkedin.com/in/zilongzhous/
+            </div>
           </div>
-          <div class="container">
-            <p>
-              <label
-                ><i class="fa fa-shopping-cart"></i> Tickets, $15 per
-                person</label
-              >
-            </p>
-            <input class="input border" type="text" placeholder="How many?" />
-            <p>
-              <label><i class="fa fa-user"></i> Send To</label>
-            </p>
-            <input class="input border" type="text" placeholder="Enter email" />
-            <button class="button block teal  section right">
-              PAY <i class="fa fa-check"></i>
-            </button>
-            <div></div>
-            <button
-              class="button red section"
-              onclick="document.getElementById('ticketModal').style.display='none'"
-            >
-              Close <i class="fa fa-remove"></i>
-            </button>
-            <p class="right">Need <a href="#" class="text-blue">help?</a></p>
+        </div>
+      </div>
+      <!-- nội dung phần giới thiệu  -->
+      <div class="main">
+        <div class="content">
+          <h6 class="title">Experience</h6>
+          <div class="experience">
+            <div class="experience_title">
+              <h5>INTRODUCE</h5>
+            </div>
+            <div class="experience_description">
+              <p class="text">
+                I am a second-year student at Hanoi University of Mining and
+                Geology, majoring in Information Technology. I have a passion
+                for this field and always want to learn new knowledge to develop
+                myself and contribute to the company. I hope to become an intern
+                in the front-end department at your company.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <h6 class="title">SKILLS</h6>
+          <div class="experience">
+            <div class="experience_title">
+              <h5>FRONT END</h5>
+            </div>
+            <!-- các ngôn ngữ hay sử dụng  -->
+            <div class="experience_description">
+              <ul class="list__skills">
+                <li class="text description">HTML</li>
+                <li class="text description">CSS (SCSS)</li>
+                <li class="text description">BOOTSTRAP</li>
+                <li class="text description">JQUERY</li>
+                <li class="text description">JAVASCRIPT</li>
+                <li class="text description">REACTJS</li>
+                <li class="text description">TYPESCRIPT</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <!-- nơi đang học  -->
+          <h6 class="title">EDUCATION</h6>
+          <div class="experience">
+            <div class="experience_title">
+              <h5>Hanoi University of Mining and Geology</h5>
+              <div class="experience_company text">2021 - 2025</div>
+            </div>
+            <div class="experience_description">
+              <p class="description text">
+                Third-year student majoring in Information Technology.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <h6 class="title">PROJECT</h6>
+          <div class="experience">
+            <div class="experience_title">
+              <h5>E-COMMERCE WEBSITE</h5>
+              <div class="experience_company text">12/2022 - 01/2023</div>
+            </div>
+            <div class="experience_description">
+              <!-- đường dẫn sản phẩm cá nhân  -->
+              <p class="description text">
+                Link-Github:
+                <a href="https://github.com/al1103/">
+                  https://github.com/al1103/
+                </a>
+              </p>
+
+              <p class="description text">
+                Link-Deploy:
+                <a href="https://stores-al1103.vercel.app/"
+                  >https://www.thewitcher.tk/</a
+                >
+              </p>
+              <!-- các chức năng của sản phẩm cá nhân  -->
+              <p class="description text">
+                Number of Team Members: 1 (self-study individual project)
+              </p>
+              <div class="title">Functionality :</div>
+              <p class="description text">Add products to the shopping cart.</p>
+              <p class="description text">
+                Modify the quantity of products in the cart. Remove products
+                from the cart, Apply discount codes.
+              </p>
+              <p class="description text">Dark mode.</p>
+              <p class="description text">
+                Log in, register an account, log out.
+              </p>
+              <p class="description text">View product details.</p>
+              <p class="description text">Search for products.</p>
+              <p class="description text">Edit the personal profile.</p>
+              <p class="title">TECHNOLOGY USED: REACTJS, HTML, CSS (SASS), FAKE RESET API.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </body>
-  <script src="./assets/js/main.js"></script>
 </html>
