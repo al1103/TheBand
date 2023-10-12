@@ -1,7 +1,9 @@
+
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  
 }
 :root {
   --black: #000000;
@@ -20,10 +22,95 @@
   --font-family-inter: "Inter", Helvetica;
   --font-family-space_mono: "Space Mono", Helvetica;
 }
+body{
+  max-width: 880px;
+  margin: 0 auto;
+}
 .body {
-    width: 620px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 0 8px;
+}
+.left {
+  grid-column: 1/2;
+  text-wrap: wrap;
+}
+.left__inside {
+}
+.information {
+  display: flex;
+  gap: 38px;
+  flex-direction: column;
+}
+.avatar {
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 300px;
+  max-height: 3%;
+  margin: 0 auto;
+}
+.avatar img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.information__top__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+.name {
+  line-height: 2rem;
+  font-size: 36px;
+  font-family: "Raleway" !important;
+}
+.icon {
+  display: inline-flex;
+  width: 50px;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-end;
+}
+.icon svg{
+  width: 20px;
+  height: 100%;
+}
+
+.right {
+  grid-column: 2/4;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-wrap: wrap;
+
+}
+
+
+
+.work__contents__title {
+  flex: 1;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+.work__contents__header{
+  display: flex;
+  align-items: center;
+}
+
+
+.body {
   height: fit-content;
-  margin: 67px auto;
+  margin: 67px auto;  
 }
 .head {
   width: 100%;
@@ -40,7 +127,7 @@
   font-size: var(--font-size-xxxxl);
   font-style: normal;
   font-weight: 700;
-  text-align: left;
+  text-align: center;
 }
 .content{
   display: flex;
@@ -52,12 +139,13 @@
   background-color: transparent;
   color: #595959;
   font-family: var(--font-family-space_mono);
-  font-size: var(--font-size-xxxl);
+  font-size: var(--font-size-xxl);
   font-style: normal;
   font-weight: 400;
   height: auto;
+  margin: 8px 0;
   line-height: 23px;
-  text-align: left;
+  text-align: center;
 }
 .head_right {
   grid-column: 10/12;
@@ -65,22 +153,25 @@
 .head_right_info {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 .head_right_info_address,
 .head_right_info_email,
 .head_right_info_phone,
 .head_right_info_linkedin {
   color: rgba(138, 138, 138, 0.9);
-  text-align: right;
+  text-align: left;
   font-family: var(--font-family-space_mono);
-  text-wrap: nowrap;
   font-size: 10px;
   font-style: normal;
+  text-wrap: wrap;
   font-weight: 400;
   line-height: 28px; /* 280% */
 }
 
+span{
+  text-wrap: wrap;
+}
 .main {
   margin: 0 33px 60px 14px;
   display: flex;
@@ -88,11 +179,27 @@
   gap: 20px;
 }
 .experience {
-  max-width: 440px;
+  gap: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: 1;
+}
+.experience h5{
+  position: relative;
+}
+.experience h5::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--stack);
+}
+.experience__contents {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .text{
   color: var(--stack);
@@ -105,10 +212,11 @@
 .description {
   position: relative;
   padding-left: 16px;
+  margin-left: 16px;
 }
 .description::before {
   content: "";
-  top: 50%;
+  top: 14px;
   left: 0px;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -121,11 +229,12 @@
   list-style: none;
 }
 .title{
+  text-wrap: wrap;
   background-color: transparent;
     letter-spacing: 0.00px;
+    margin: 16px 0;
     line-height: 18px;
     text-align: left;
-    white-space: nowrap;
     color: var(--slate-gray);
     font-family: var(--font-family-space_mono);
     font-size: var(--font-size-xxl);
@@ -155,4 +264,20 @@ h5{
     font-size: var(--font-size-xxxl);
   }
   
+  .right,
+  .left{
+    grid-column: 1/2;
+    max-width: 100%;
+    width: 100%;
+  }
+  body{
+    max-width: 100%;
+  }
+ 
+  .body{
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    padding: 0;
+    padding: 10px;
+  }
 }
